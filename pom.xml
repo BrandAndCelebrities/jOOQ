@@ -16,6 +16,17 @@
     <packaging>pom</packaging>
 
     <name>jOOQ Parent</name>
+         
+    <distributionManagement>
+        <repository>
+            <id>bc_nexus_release</id>
+            <url>http://forge-ci-01:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>bc_nexus_snapshot</id>
+            <url>http://forge-ci-01:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <description>
         jOOQ effectively combines complex SQL, typesafety, source code generation, active records,
